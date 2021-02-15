@@ -1,0 +1,34 @@
+main {
+  background-size: cover ;
+  background-image: url(backgroundImg.jpg);
+  background-repeat: no-repeat;
+}
+
+.form-label {
+  color: white;
+}
+
+#exampleInputEmail1{
+  border: 2px solid #ffff00;
+  
+};
+
+#link{
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.esqueceuASenha {
+  color: white;
+  text-decoration: none;
+}
+
+
+.lembrar {
+  color: white;
+}
+
+.text-light {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
