@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>ResiliaFlix</title>
+  <link rel="stylesheet" href="ResiliaFlix.css" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+
+  <header>
+    <!-- é oq esta deixando o footer amarelo, porem tira os planos, termos de uso, etc... -->
+    <nav class="navbar navbar-light" style="background-color: #ffff00;> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ResiliaFlix 🎬</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Planos</a>
+            <a class="nav-link" href="#">Perguntas Frequentes</a>
+            <a class="nav-link" href="#">Termos de uso</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </nav>
+  </header>
+
+  <main>    
+    <form>
+      <div class="d-inline-flex p-2 bd-highlight, d-flex flex-column bd-highlight mb-3">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Endereço de email.</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="passWordHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+        <div id="passWordHelp" class="form-text">Recomendamos que você não compartilhe sua senha com mais ninguém.</div>
+      </div>
+      <a id="link" href="#" class="esqueceuASenha">Esqueceu a senha?</a>
+      <div class="mb-3 form-check">
+        <br>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="lembrar" for="exampleCheck1">Lembre-se de mim</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </div>
+    </form>
+  </main>
+  
+  <footer class="bg-secondary p-3  fixed">
+    <p id="contatos" class="text-light m-0 text-center">Contatos: <a class="text-light d-flex flex-column bd-highlight" href="https://github.com/NicolasCardia">Nicolas Cardia</a><a class="text-light" href="https://github.com/sergiofagundesb">Sergio Fagundes</a></p>
+</footer>
+</body>
+</html>
