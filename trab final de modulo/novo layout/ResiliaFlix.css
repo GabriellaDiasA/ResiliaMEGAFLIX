@@ -1,34 +1,90 @@
+:root{
+  --ResiliaYellow:#e8c100;
+  --ResiliaBlue:skyblue;
+  --ResiliaPurple:#854dff;
+  --ResiliaBlack:#333232;
+  --ResiliaWhite:whitesmoke;
+}
+
+.ResiliaYellow{
+  background-color: var(--ResiliaYellow);
+}
+
+.ResiliaBlue{
+  background-color: var(--ResiliaBlue);
+}
+
+.ResiliaBlack{
+  background-color: var(--ResiliaBlack);
+}
+
+body{
+  font-size: 16px;
+}
+
 main {
-  background-size: cover ;
-  background-image: url(backgroundImg.jpg);
-  background-repeat: no-repeat;
+  background-color: var(--ResiliaWhite);
+  height: 100vh;
+}
+
+form{
+  padding-top: 94px;
+  padding-bottom: 66px;
+}
+
+/* #mainForm{
+  width: 60vw;
+} */
+
+#ResiliaFlixTitle{
+  text-decoration: none;
+  color: black;
 }
 
 .form-label {
-  color: white;
 }
 
 #exampleInputEmail1{
-  border: 2px solid #ffff00;
-  
-};
+  border: 2px solid var(--ResiliaYellow);
+}
+
+#exampleInputPassword1{
+  border: 2px solid var(--ResiliaYellow);
+}
 
 #link{
-  color: #ffffff !important;
   text-decoration: none !important;
 }
 
 .esqueceuASenha {
-  color: white;
   text-decoration: none;
 }
 
 
 .lembrar {
-  color: white;
 }
 
 .text-light {
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.resilia-btn{
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--ResiliaBlue);
+}
+
+.resilia-btn:hover{
+  border-color: var(--ResiliaPurple);
+}
+
+.contact{
+  padding: 0 4px;
+}
+
+p a{
+  text-decoration: none;
+  color: black;
 }
