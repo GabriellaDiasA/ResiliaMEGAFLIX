@@ -3,7 +3,7 @@
   --ResiliaBlue:skyblue;
   --ResiliaPurple:#854dff;
   --ResiliaBlack:#333232;
-  --ResiliaWhite:whitesmoke;
+  --ResiliaWhite:rgb(240, 240, 240);
 }
 
 .ResiliaYellow{
@@ -25,11 +25,14 @@ body{
 main {
   background-color: var(--ResiliaWhite);
   height: 100vh;
-}
-
-form{
   padding-top: 94px;
   padding-bottom: 66px;
+}
+
+.poster{
+  height: 400px;
+  width: 266px;
+  padding: 7px 3px;
 }
 
 /* #mainForm{
@@ -55,11 +58,6 @@ form{
 
 .esqueceuASenha {
   text-decoration: none;
-}
-
-.text-light {
-  text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .resilia-btn{
