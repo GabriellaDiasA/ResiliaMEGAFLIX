@@ -41,14 +41,11 @@ form{
   color: black;
 }
 
-.form-label {
-}
-
-#exampleInputEmail1{
+#inputUsername{
   border: 2px solid var(--ResiliaYellow);
 }
 
-#exampleInputPassword1{
+#inputPassword{
   border: 2px solid var(--ResiliaYellow);
 }
 
@@ -58,10 +55,6 @@ form{
 
 .esqueceuASenha {
   text-decoration: none;
-}
-
-
-.lembrar {
 }
 
 .text-light {
@@ -87,4 +80,9 @@ form{
 p a{
   text-decoration: none;
   color: black;
+}
+
+#wrongPassword{
+  color: red;
+  padding-top: 5px;
 }
