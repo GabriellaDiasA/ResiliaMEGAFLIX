@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script type="text/javascript" src="script/jquery-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="script/jquery.maskedinput-1.1.4.pack.js"></script>
+</head>
+<body class="m-3" >
+    <div class="titulo">
+        <h2>Página de cadastro do usuário</h2>
+    </div>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nome completo</label>
+        <input type="name" class="form-control" id="nome" placeholder="Ex:  José da Silva" required>
+      </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="josedasilva@email.com.br" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="inputPassword4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Confirmação de senha</label>
+          <input type="password" class="form-control" id="inputPassword4" required>
+        </div>
+        <div class="col-12">
+          <label for="rg" class="form-label">RG</label>
+          <input type="text" class="form-control" id="rg" placeholder="00.000.000-0" required>
+        </div>
+        <div class="col-12">
+          <label for="cep" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cep" onblur="pesquisacep(this.value);" placeholder="00000000" required>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Rua</label>
+          <input type="text" class="form-control" id="rua" placeholder="Ex: Rua Fulano da Silva" readonly>  
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Bairro</label>
+          <input type="text" class="form-control" id="bairro" placeholder="Ex: Bangú" readonly>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label"> Cidade</label>
+          <input type="text" class="form-control" id="cidade" placeholder="Ex: Rio de Janeiro" readonly>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Número</label>
+          <input type="text" class="form-control" id="numero" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck">
+              Eu aceito os <a href="#">termos de condição</a>
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" onclick="cadastro()" class="btn btn-primary">Cadastrar-se</button>
+        </div>
+      </form>
+      <script src="script/api.js">
+    </script>
+      
+</body>
+</html>
