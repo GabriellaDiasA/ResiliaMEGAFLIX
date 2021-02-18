@@ -33,6 +33,7 @@ main {
   height: 400px;
   width: 266px;
   padding: 7px 3px;
+  cursor: pointer;
 }
 
 /* #mainForm{
