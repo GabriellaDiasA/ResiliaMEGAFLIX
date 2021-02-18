@@ -75,7 +75,7 @@ class LoginView{
 
     nextPage(){
         console.log("do it");
-        location.href = "http://127.0.0.1:5500/browse.html";
+        location.href = "https://gabrielladiasa.github.io/browse.html";
     }
 }
 

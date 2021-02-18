@@ -25,7 +25,7 @@ class View{
             img.src = this.posters[poster];
             img.addEventListener('click', () => {
                 localStorage.setItem("film", JSON.stringify(this.films[poster]));
-                location.href = "http://127.0.0.1:5500/info.html";
+                location.href = "https://gabrielladiasa.github.io/info.html";
             })
             this.main.append(img);
         }
@@ -51,7 +51,7 @@ class FilmModel{
     makeRequest(page){
         let result;
         let request = new XMLHttpRequest();
-        request.open("GET", `http://www.omdbapi.com/?apikey=9c2c1474&s=Batman&page=${page}`, false);
+        request.open("GET", `https://www.omdbapi.com/?apikey=9c2c1474&s=Batman&page=${page}`, false);
         request.addEventListener('load', () => {
             let e;
             try{

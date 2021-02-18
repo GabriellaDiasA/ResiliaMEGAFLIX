@@ -18,7 +18,7 @@ class FilmModel{
     receiveData(){
         let result;
         let request = new XMLHttpRequest();
-        request.open("GET", `http://www.omdbapi.com/?apikey=9c2c1474&i=${this.film.imdbID}`, false);
+        request.open("GET", `https://www.omdbapi.com/?apikey=9c2c1474&i=${this.film.imdbID}`, false);
         request.addEventListener('load', () => {
             let e;
             try{
