@@ -1,6 +1,7 @@
 let emialEnviado = false;
 let texto = document.createElement("div");
 let mensagem = false;
+let mainTag = document.getElementsByTagName("main")[0];
 function confirma(){
   if(document.getElementById("exampleInputEmail1").value == "" || document.getElementById("exampleInputEmail1").value == " "){
     if(mensagem == false)
@@ -14,9 +15,10 @@ function confirma(){
 
   if(emialEnviado == false){
     if(mensagem == true){
-      document.body.removeChild(texto)
+      mainTag.removeChild(texto)
     }
- document.body.appendChild(texto);
+    
+ mainTag.appendChild(texto);
  texto.textContent = "formulário de e-mail enviado ✔️";
  emialEnviado = true
  texto.style.color = "green"

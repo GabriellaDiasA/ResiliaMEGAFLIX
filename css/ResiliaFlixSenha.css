@@ -32,3 +32,11 @@ p a{
   text-decoration: none;
   color: black;
 }
+
+a h1{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
