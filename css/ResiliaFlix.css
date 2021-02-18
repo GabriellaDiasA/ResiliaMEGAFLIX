@@ -89,3 +89,12 @@ p a{
 a{
   text-decoration: none;
 }
+
+footer{
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
