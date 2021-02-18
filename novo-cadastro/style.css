@@ -1,0 +1,46 @@
+:root{
+  --ResiliaYellow:#e8c100;
+  --ResiliaBlue:skyblue;
+  --ResiliaPurple:#854dff;
+  --ResiliaBlack:#333232;
+  --ResiliaWhite:rgb(240, 240, 240);
+}
+
+.ResiliaYellow{
+  background-color: var(--ResiliaYellow);
+}
+
+#ResiliaFlixTitle{
+  text-decoration: none;
+  color: black;
+}
+
+
+.pgCadastro {
+  background-color: whitesmoke;
+  padding: 15px 15px;
+}
+
+main{
+  margin-top: 100px;
+}
+
+.botao {
+  width: 250px;
+  font-weight: bold;
+ border-radius: 6px; 
+ padding: 15px; 
+ cursor: pointer; 
+ color: rgb(0, 0, 0);  
+ font-size: 16px;
+ border: 2px solid #87ceeb;
+}
+
+.botao:hover {
+  border-color: mediumblue;
+}
+
+.form-control{
+  border: 2px solid var(--ResiliaYellow) !important;
+}
+
