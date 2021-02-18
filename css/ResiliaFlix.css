@@ -24,7 +24,7 @@ body{
 
 main {
   background-color: var(--ResiliaWhite);
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 94px;
   padding-bottom: 66px;
 }
