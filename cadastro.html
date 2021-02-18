@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuário</title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/ResiliaFlix.css" rel="stylesheet">
+    <link href="./css/ResiliaFlixCadastro.css" rel="stylesheet">
+    <script type="text/javascript" src="script/jquery-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="script/jquery.maskedinput-1.1.4.pack.js"></script>
+</head>
+<body>
+	
+  <header>
+		<nav class="navbar navbar-light fixed-top ResiliaYellow"> 
+		<nav class="navbar navbar-expand-lg navbar-light bg-light container-sm rounded-1">
+		<div class="container">
+			<h1 id="ResiliaFlixTitle">Cadastro</h1>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-link active" aria-current="page" href="#">Planos</a>
+				<a class="nav-link" href="#">Perguntas Frequentes</a>
+				<a class="nav-link" href="#">Termos de uso</a>
+			</div>
+			</div>
+		</div>
+		</nav>
+		</nav>
+	</header>
+
+  <main class="container-lg">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nome completo</label>
+        <input type="name" class="form-control" id="nome" placeholder="Ex:  José da Silva" required>
+      </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="josedasilva@email.com.br" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="inputPassword4" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Confirmação de senha</label>
+          <input type="password" class="form-control" id="inputPassword4" required>
+        </div>
+        <div class="col-12">
+          <label for="rg" class="form-label">RG</label>
+          <input type="text" class="form-control" id="rg" placeholder="00.000.000-0" required>
+        </div>
+        <div class="col-12">
+          <label for="cep" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cep" onblur="pesquisacep(this.value);" placeholder="00000000" required>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Rua</label>
+          <input type="text" class="form-control" id="rua" placeholder="Ex: Rua Fulano da Silva" readonly>  
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Bairro</label>
+          <input type="text" class="form-control" id="bairro" placeholder="Ex: Bangú" readonly>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label"> Cidade</label>
+          <input type="text" class="form-control" id="cidade" placeholder="Ex: Rio de Janeiro" readonly>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Número</label>
+          <input type="text" class="form-control" id="numero" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck">
+              Eu aceito os <a href="#">termos de condição</a>
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button id="botaozinho" class="resilia-btn btn">Cadastrar-se</button>
+        </div>
+      </form>
+      <br>
+      <h5>Ou vá para a <a href="./index.html">Página de login</a></h5>
+  </main>  
+      <script src="script/api.js"></script>
+      
+</body>
+</html>
