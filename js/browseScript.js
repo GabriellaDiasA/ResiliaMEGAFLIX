@@ -11,8 +11,10 @@ class Controller{
 class View{
     constructor(model){
         this.posters = [];
+        this.films = [];
         this.main = document.getElementsByTagName("main")[0];
         for(let i = 0; i < model.films.length; i++){
+            this.films[i] = model.films[i]
             this.posters[i] = model.films[i].Poster;
         }
     }
@@ -21,6 +23,10 @@ class View{
             let img = document.createElement("img");
             img.setAttribute("class", "poster");
             img.src = this.posters[poster];
+            img.addEventListener('click', () => {
+                localStorage.setItem("film", JSON.stringify(this.films[poster]));
+                location.href = "http://127.0.0.1:5500/info.html";
+            })
             this.main.append(img);
         }
     }
@@ -30,19 +36,30 @@ class FilmModel{
     constructor(){
         this.films = this.receiveData();
     }
+
     receiveData(){
         let filmsArray = [];
+        let data = this.makeRequest(1);
+        filmsArray = data.Search;
+        data = this.makeRequest(2);
+        filmsArray.push(data.Search[0]);
+        filmsArray.push(data.Search[1]);
+
+        return filmsArray;
+    }
+
+    makeRequest(page){
+        let result;
         let request = new XMLHttpRequest();
-        request.open("GET", "http://www.omdbapi.com/?apikey=9c2c1474&s=Disney", false);
+        request.open("GET", `http://www.omdbapi.com/?apikey=9c2c1474&s=Batman&page=${page}`, false);
         request.addEventListener('load', () => {
-            let e = new Error("Unexpected return!");
+            let e;
             try{
                 if(request.status == 200){
-                    let result = JSON.parse(request.responseText);
-                    filmsArray = result.Search;
-                    console.log(filmsArray);
+                    result = JSON.parse(request.responseText);
                 }
                 else{
+                    e = new Error("Unexpected return!");
                     throw e;
                 }
             }
@@ -51,7 +68,7 @@ class FilmModel{
             }
         })
         request.send();
-        return filmsArray;
+        return result;
     }
 }
 
