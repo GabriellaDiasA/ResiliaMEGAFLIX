@@ -5,14 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de usuário</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/ResiliaFlix.css" rel="stylesheet">
+    <link href="./css/ResiliaFlixCadastro.css" rel="stylesheet">
     <script type="text/javascript" src="script/jquery-1.2.6.pack.js"></script>
     <script type="text/javascript" src="script/jquery.maskedinput-1.1.4.pack.js"></script>
 </head>
-<body class="m-3" >
-    <div class="titulo">
-        <h2>Página de cadastro do usuário</h2>
-    </div>
+<body>
+	
+  <header>
+		<nav class="navbar navbar-light fixed-top ResiliaYellow"> 
+		<nav class="navbar navbar-expand-lg navbar-light bg-light container-sm rounded-1">
+		<div class="container">
+			<h1 id="ResiliaFlixTitle">Cadastro</h1>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-link active" aria-current="page" href="#">Planos</a>
+				<a class="nav-link" href="#">Perguntas Frequentes</a>
+				<a class="nav-link" href="#">Termos de uso</a>
+			</div>
+			</div>
+		</div>
+		</nav>
+		</nav>
+	</header>
+
+  <main class="container-lg">
     <form class="row g-3">
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Nome completo</label>
@@ -63,11 +84,13 @@
           </div>
         </div>
         <div class="col-12">
-          <button type="submit" onclick="cadastro()" class="btn btn-primary">Cadastrar-se</button>
+          <button id="botaozinho" class="resilia-btn btn">Cadastrar-se</button>
         </div>
       </form>
-      <script src="script/api.js">
-    </script>
+      <br>
+      <h5>Ou vá para a <a href="./index.html">Página de login</a></h5>
+  </main>  
+      <script src="script/api.js"></script>
       
 </body>
 </html>

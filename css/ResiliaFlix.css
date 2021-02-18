@@ -25,8 +25,8 @@ body{
 main {
   background-color: var(--ResiliaWhite);
   min-height: 100vh;
-  padding-top: 94px;
-  padding-bottom: 66px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .poster{
