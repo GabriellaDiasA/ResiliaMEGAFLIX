@@ -1,0 +1,86 @@
+:root{
+  --ResiliaYellow:#e8c100;
+  --ResiliaBlue:skyblue;
+  --ResiliaPurple:#854dff;
+  --ResiliaBlack:#333232;
+  --ResiliaWhite:rgb(240, 240, 240);
+}
+
+.ResiliaYellow{
+  background-color: var(--ResiliaYellow);
+}
+
+.ResiliaBlue{
+  background-color: var(--ResiliaBlue);
+}
+
+.ResiliaBlack{
+  background-color: var(--ResiliaBlack);
+}
+
+body{
+  font-size: 16px;
+}
+
+main {
+  background-color: var(--ResiliaWhite);
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.poster{
+  height: 400px;
+  width: 266px;
+  padding: 7px 3px;
+}
+
+/* #mainForm{
+  width: 60vw;
+} */
+
+#ResiliaFlixTitle{
+  text-decoration: none;
+  color: black;
+}
+
+#inputUsername{
+  border: 2px solid var(--ResiliaYellow);
+}
+
+#inputPassword{
+  border: 2px solid var(--ResiliaYellow);
+}
+
+#link{
+  text-decoration: none !important;
+}
+
+.esqueceuASenha {
+  text-decoration: none;
+}
+
+.resilia-btn{
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--ResiliaBlue);
+}
+
+.resilia-btn:hover{
+  border-color: var(--ResiliaPurple);
+}
+
+.contact{
+  padding: 0 4px;
+}
+
+p a{
+  text-decoration: none;
+  color: black;
+}
+
+#wrongPassword{
+  color: red;
+  padding-top: 5px;
+}
